@@ -10,7 +10,7 @@
 
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.4/leaflet.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.4/leaflet.ie.css" /><![endif]-->
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -209,7 +209,7 @@
                 '<tr>' + '<th colspan=2>' + '<img class="tree-photo" src="img/trees/' + feature.properties.Photo_new + '.jpg" alt="">' + '</th>' + '</tr>' +
                 '<table>';
 
-            layer.bindPopup(content, {minWidth: 210, autoPanPaddingTopLeft: 250});
+            layer.bindPopup(content, {minWidth: 210, autoPanPadding: new L.Point(75, 75)});
           }
         }
       });
@@ -220,7 +220,7 @@
 
     });
     </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.4/leaflet.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <!--     // <script type="text/javascript" src="lib/leaflet/plugins/Permalink.js"></script> -->
 <!--     // <script type="text/javascript" src="lib/leaflet/plugins/leaflet.label.js"></script> -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.min.js"></script>
